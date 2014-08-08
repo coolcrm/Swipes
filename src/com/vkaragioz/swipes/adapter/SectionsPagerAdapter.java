@@ -1,6 +1,5 @@
 package com.vkaragioz.swipes.adapter;
 
-import java.util.Locale;
 
 import android.app.Fragment;
 import android.app.FragmentManager;

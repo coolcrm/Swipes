@@ -2,13 +2,14 @@ package com.vkaragioz.swipes;
 
  
 
+import com.google.android.gms.maps.MapFragment;
+
 import android.os.Bundle;
-import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
  
-public class FourFragment extends Fragment {
+public class FourFragment extends MapFragment {
  
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

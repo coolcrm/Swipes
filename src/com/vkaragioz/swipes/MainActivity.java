@@ -1,6 +1,5 @@
 package com.vkaragioz.swipes;
 
-import java.util.Locale;
 
 import com.vkaragioz.swipes.adapter.SectionsPagerAdapter;
 
