@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Swipes</string>
+    <string name="section_2_club_search">Клубы рядом</string>
+    <string name="section_2_club_profile">Карточка клуба</string>
+    <string name="section_3_trainer_profile">Карточка тренера</string>
+    <string name="section_4_calendar">Календарь</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
