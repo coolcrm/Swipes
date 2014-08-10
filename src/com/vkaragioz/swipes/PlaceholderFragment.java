@@ -2,6 +2,8 @@ package com.vkaragioz.swipes;
 
 
 
+import com.google.android.gms.maps.MapFragment;
+
 import android.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -42,6 +44,8 @@ public class PlaceholderFragment extends Fragment {
 			Bundle savedInstanceState) {
 		View rootView = inflater.inflate(R.layout.fragment_main, container,
 				false);
+		//Add something to the map
+		
 		/*
 		TextView textView = (TextView) rootView
 				.findViewById(R.id.section_label);
@@ -58,5 +62,13 @@ public class PlaceholderFragment extends Fragment {
 		spinner.setAdapter(adapter);
 		return rootView;
 	}
-	
+	//See here
+	//http://stackoverflow.com/questions/14074625/mapfragment-in-action-bar-tabs
+	@Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        MapFragment f = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+        if (f != null) 
+            getFragmentManager().beginTransaction().remove(f).commit();
+    }
 }
