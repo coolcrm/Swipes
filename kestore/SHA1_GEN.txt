@@ -1,3 +1,4 @@
-C:\Workspace\Swipes>"C:\Program Files\Java\jre7\bin\keytool.exe"  -list -v -keys
-tore C:\Workspace\Swipes\kestore\keystore -alias alias1 -storepass ujhf45  -keyp
-ass ujhf45
+                                                                                                                                "C:\Program Files\Java\jre7\bin\keytool.exe" -list -alias androiddebugkey -keystore debug.keystore -storepass android -keypass android
+
+
+keytool -list -v -keystore "%USERPROFILE%\.android\debug.keystore" -alias androiddebugkey -storepass android -keypass android
