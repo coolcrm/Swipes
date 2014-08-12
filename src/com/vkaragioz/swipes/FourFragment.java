@@ -15,7 +15,7 @@ public class FourFragment extends MapFragment {
 
 		View rootView = inflater.inflate(R.layout.fragment_four, container,
 				false);
-
+		this.setRetainInstance(true);
 		return rootView;
 	}
 

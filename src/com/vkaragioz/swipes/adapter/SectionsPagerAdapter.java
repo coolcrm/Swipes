@@ -15,7 +15,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 	public SectionsPagerAdapter(FragmentManager fm) {
 		super(fm);
 	}
-
+	
 	@Override
 	public Fragment getItem(int position) {
 		// getItem is called to instantiate the fragment for the given page.
@@ -26,6 +26,8 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 		case 0:
 			// Top Rated fragment activity
 			return new PlaceholderFragment(); // .newInstance(position + 1);;
+		//case 1:
+			// Top Rated fragment activity
 		case 1:
 			// Games fragment activity
 			return new SecondFragment();
@@ -43,7 +45,7 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
 	@Override
 	public int getCount() {
 		// Show 3 total pages.
-		return 4;
+		return 3;
 	}
 	/*
 	 * @Override public CharSequence getPageTitle(int position) { Locale l =

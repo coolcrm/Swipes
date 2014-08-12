@@ -13,7 +13,7 @@ public class  SecondFragment extends Fragment {
             Bundle savedInstanceState) {
  
         View rootView = inflater.inflate(R.layout.fragment_second, container, false);
-         
+        this.setRetainInstance(true);
         return rootView;
     }
     
