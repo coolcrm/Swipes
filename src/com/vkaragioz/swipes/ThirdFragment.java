@@ -14,7 +14,7 @@ public class ThirdFragment extends Fragment {
 
 		View rootView = inflater.inflate(R.layout.fragment_third, container,
 				false);
-		this.setRetainInstance(true);
+		this.setRetainInstance(true); 
 		return rootView;
 	}
 

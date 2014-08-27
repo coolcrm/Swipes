@@ -2,15 +2,89 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ff8400" >
-     
-    <TextView android:layout_width="fill_parent"
+    android:background="#ff8400"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/cluName"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
         android:gravity="center"
-        android:text="Design Games Screen"
-        android:textSize="20dp"
-        android:layout_centerInParent="true"/>
-     
- 
+        android:text="Клуб VIP-Теннис"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="20dp" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/cluName"
+        android:layout_marginTop="14dp"
+        android:isIndicator="true"
+        android:numStars="5"
+        android:stepSize="0.1" />
+
+    <TextView
+        android:id="@+id/clubWWW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rating"
+        android:text="www.goldtennis.ru"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/clubAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clubWWW"
+        android:text="Ул. Винницкая д. 16а"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/clubPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/clubAddress"
+        android:text="+7 495 121-3212"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_below="@+id/clubPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            
+            android:orientation="vertical" >
+
+            <com.vkaragioz.swipes.TrainerViewObject
+                android:id="@+id/trainersView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </com.vkaragioz.swipes.TrainerViewObject>
+
+            <com.vkaragioz.swipes.TrainerViewObject
+                android:id="@+id/trainersView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <com.vkaragioz.swipes.TrainerViewObject
+                android:id="@+id/trainersView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               />
+        </LinearLayout>
+    </ScrollView>
+
 </RelativeLayout>
