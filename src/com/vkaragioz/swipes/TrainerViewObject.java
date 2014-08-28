@@ -38,14 +38,14 @@ public class TrainerViewObject extends LinearLayout {
 				.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.trainer_view_object, this, true);
 
-		TextView title = (TextView) getChildAt(1);
-		title.setText("Валерий Горбунов, КМС");
+		//TextView title = (TextView) getChildAt(1);
+		//title.setText("Валерий Горбунов, КМС");
 
-		mImage = (ImageView) getChildAt(0);
-		mImage.setImageResource(R.drawable.ic_launcher);
+		//mImage = (ImageView) getChildAt(0);
+		//mImage.setImageResource(R.drawable.ic_launcher);
 		
-		RatingBar ratingBar = (RatingBar) getChildAt(2);
-		ratingBar.setRating(4.0f); 
+		//RatingBar ratingBar = (RatingBar) getChildAt(2);
+		//ratingBar.setRating(4.0f); 
 
 		// mValue = getChildAt(3);
 		// mValue.setBackgroundColor(valueColor);
