@@ -15,10 +15,10 @@ import android.widget.TextView;
 
 public class SecondFragment extends Fragment {
 	ArrayList prgmName;
-	public static int[] prgmImages = { R.drawable.images, R.drawable.images1,
-			R.drawable.images2, R.drawable.images3, R.drawable.images4,
-			R.drawable.images5, R.drawable.images6, R.drawable.images7,
-			R.drawable.images8 };
+	public static int[] prgmImages = { R.drawable.i, R.drawable.i1,
+			R.drawable.i2, R.drawable.i3, R.drawable.i4,
+			R.drawable.i5, R.drawable.i6, R.drawable.i7,
+			R.drawable.i8 };
 	public static String[] prgmNameList = { "Алексей Васютин", "Линар Ивашов", "Алла Удальцова", "Анатолий Бочаров",
 			"Михаил Пургин","Анна Тост",  "Петр Станев", "Олег Царёв", "Геннадий Водянов" };
 	ListView lv;
