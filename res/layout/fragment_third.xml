@@ -51,7 +51,7 @@
             android:text="Мастер спорта международного класса. Выпускница Московскго института физкультуры, спорта и туризма " />
     </LinearLayout>
 
-    <CalendarView
+    <com.tyczj.extendedcalendarview.ExtendedCalendarView
         android:id="@+id/trainerSpecialty"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
