@@ -28,7 +28,6 @@ public class TrainerViewObject extends LinearLayout {
 		// String titleText =
 		// a.getString(R.styleable.ColorOptionsView_titleText);
 
-		int valueColor = android.R.color.holo_red_dark;
 		// a.recycle();
 
 		setOrientation(LinearLayout.HORIZONTAL);
