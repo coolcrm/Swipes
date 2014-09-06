@@ -1,62 +1,215 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue13"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fillViewport="true" >
 
-    <TextView
-        android:id="@+id/trainerName"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginBottom="5dp"
-        android:layout_marginTop="5dp"
-        android:gravity="center"
-        android:text="Алла Удальцова"
-        android:textSize="20dp" />
-
-    <ImageView
-        android:id="@+id/trainerPhoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/trainerName"
-        android:layout_weight="1"
-        android:src="@drawable/alla_u" />
-
-    <LinearLayout
-        android:id="@+id/ll"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_below="@+id/trainerName"
-        android:layout_toRightOf="@+id/trainerPhoto"
-        android:layout_weight="1"
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue13"
         android:orientation="vertical" >
 
         <TextView
-            android:id="@+id/trainerSpecialty"
+            android:id="@+id/trainerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Алла Удальцова"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/trainerPhoto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            
-            android:text="Старший тренер по теннису. Детский и взрослый. " />
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/trainerName"
+            android:layout_weight="1"
+            android:src="@drawable/alla_u" />
 
-        <TextView
-            android:id="@+id/trainerBio"
+        <LinearLayout
+            android:id="@+id/ll"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/trainerSpecialty"
-            android:text="Мастер спорта международного класса. Выпускница Московскго института физкультуры, спорта и туризма " />
-    </LinearLayout>
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/trainerName"
+            android:layout_toRightOf="@+id/trainerPhoto"
+            android:layout_weight="1"
+            android:orientation="vertical" >
 
-    <com.tyczj.extendedcalendarview.ExtendedCalendarView
-        android:id="@+id/trainerSpecialty"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/trainerPhoto" />
+            <TextView
+                android:id="@+id/trainerSpecialty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Старший тренер по теннису. Детский и взрослый. " />
 
-</RelativeLayout>
+            <TextView
+                android:id="@+id/trainerBio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/trainerSpecialty"
+                android:text="Мастер спорта международного класса. Выпускница Московскго института физкультуры, спорта и туризма " />
+        </LinearLayout>
+
+        <com.tyczj.extendedcalendarview.ExtendedCalendarView
+            android:id="@+id/trainerCalendar"
+            android:layout_width="wrap_content"
+             android:layout_height="250dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/trainerPhoto" >
+        </com.tyczj.extendedcalendarview.ExtendedCalendarView>
+
+        <!-- <ImageView -->
+        <!-- android:id="@+id/traine2" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" -->
+        <!-- android:layout_alignParentLeft="true" -->
+        <!-- android:layout_below="@id/trainerCalendar" -->
+        <!-- android:src="@drawable/alla_u" /> -->
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/trainerCalendar" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/angry_btn1"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="9:00 9:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn2"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="10:00 10:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn3"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="11:00 11:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn4"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="12:00 12:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn5"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="13:00 14:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn6"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="14:00 15:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn7"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="15:00 15:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn8"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="16:00 16:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn8"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="17:00 17:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn8"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="18:00 18:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn9"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="19:00 19:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn10"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="20:00 20:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn10"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="18:00 18:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+
+                <Button
+                    android:id="@+id/angry_btn10"
+                    android:layout_width="79dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/buttonshape"
+                    android:text="18:00 18:50"
+                    android:textColor="#E0FBFF"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+</ScrollView>

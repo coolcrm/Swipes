@@ -1,5 +1,7 @@
 package com.vkaragioz.swipes;
 
+import com.tyczj.extendedcalendarview.ExtendedCalendarView;
+
 import android.os.Bundle;
 import android.app.Fragment;
 import android.view.LayoutInflater;
@@ -15,6 +17,8 @@ public class ThirdFragment extends Fragment {
 		View rootView = inflater.inflate(R.layout.fragment_third, container,
 				false);
 		this.setRetainInstance(true); 
+		ExtendedCalendarView calendar = (ExtendedCalendarView)rootView.findViewById(R.id.trainerCalendar);
+		
 		return rootView;
 	}
 
