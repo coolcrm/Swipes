@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:fillViewport="true" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue13"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/reserveName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="Бронь тренировки"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/reserveClubName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reserveName"
+            android:text="Клуб VIP-Теннис"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/reserveTrainerName"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reserveClubName"
+            android:text="Анна Удальцова"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+        
+        <TextView
+            android:id="@+id/reserveDateAndTime"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/reserveTrainerName"
+            android:text="29 ноября\n15:00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/buttonConfirmReserve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/reserveDateAndTime"
+             android:layout_centerHorizontal="true"
+            android:text="  Подтвердить  резерв  " />
+
+        <Button
+            android:id="@+id/buttonAddToCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonConfirmReserve"
+            android:layout_centerHorizontal="true"
+            android:text="Добавить в календарь" />
+
+    </RelativeLayout>
+
+</ScrollView>
